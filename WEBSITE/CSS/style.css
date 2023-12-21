@@ -1,0 +1,371 @@
+/* BODY */
+body{
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif; /* applies to all elements inside the body*/
+	font-size: 1em;
+	color:#000000; /*black*/
+	margin-left: 0%; /* set the left margin of an element to 0% of the element's width*/
+	margin-right: 0%; /* set the right margin of an element to 0% of the element's width*/
+	line-height: 1.2; /* height of each line of text*/
+}
+.title h1 {
+    font-size: 2.8em;
+    margin: 0; /* space around HTML element's border */
+    font-family: "Lucida Handwriting";
+    font-variant: small-caps;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* HEADER */
+#header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header {
+    background-color: rgb(87, 110, 87);
+    text-align: center; /*center the text content within the element's container*/
+    color: white;
+    padding-right: 1%;
+}
+.logo img {
+    display: block;
+    width: 150px;
+    height: auto;
+}
+/*Buttons*/
+.not-signed-in-buttons {
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column */
+    gap: 10px; /* space between buttons*/
+}
+.signed-in-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* space between buttons*/
+}
+button {
+    padding: 8px; /* button size*/
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+#signin-button {
+    background-color: #28a745;
+    color: #fff; /* font color*/
+}
+#signin-button:hover {
+    background-color: #333; /* Darker green on hover, you can change this */
+}
+#signup-button {
+    background-color: #cba302;
+    color: #fff;
+}
+#signup-button:hover {
+    background-color: #333; /* Darker green on hover, you can change this */
+}
+#profile-button{
+    background-color:  rgb(87, 110, 87);
+    color: #fff;
+}
+#resetPass-button{
+    background-color: #30a3dd;
+    color: #fff;
+}
+#signOut-button{
+    background-color: #bd2c2c;
+    color: #fff;
+}
+#myOrders-button{
+    background-color: #28a745;
+    color: #fff;
+}
+#myReservations-button{
+    background-color: #28a745;
+    color: #fff;
+}
+#basket-button{
+    background-color:  rgb(87, 110, 87);
+    color: #fff;
+}
+.profile-buttons{
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column */
+    gap: 10px; /* space between buttons*/
+    width: 200px;
+}
+#reserveTable-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cba302; /* Green color, you can change this */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    font-size: 16px;
+}
+#reserveTable-link:hover {
+    background-color: #333; /* Darker green on hover, you can change this */
+}
+
+/*FORMS*/
+.signup-container, .signin-container, .contact-us-container {
+    width: 100%;
+    background-color: rgb(239, 245, 200);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.header-container {
+    margin-bottom: 20px;
+}
+.signup-form, .signin-form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.contact-us-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+.signup-form label,.signin-form label {
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+.signup-form input, .signin-form input {
+    width: 100%; /* makes same size with container*/
+    padding: 10px; /* size of input labels*/
+    margin-bottom: 15px; /* space between labels and input labels*/
+    font-size: 16px;
+    border-radius: 5px;
+}
+.submit {
+    background-color: rgb(87, 110, 87);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.is-invalid {
+    border: 1px solid red;
+}
+.invalid-feedback {
+    color: red;
+}
+
+/* NAVIGATION MENU */
+#nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #333;
+}
+nav li {
+    list-style-type: none; /* removes points*/
+    width: 20%;  /*Adding widths:20% x 5 = 96% allowing for 2% padding left on nav ul for mobile CSS*/
+    float: left; /*????????*/
+}
+.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+	text-decoration: none; /*remove decorations to text, such as underlines, overlines, and strikethroughs*/
+	font-size:1.2em; /*specify the size of the font used for text content*/
+}
+ul.topnav li:hover {
+    background-color: rgb(13, 32, 13);
+}
+.topnav li.icon {
+    display: none; /* hide icon menu for full screen*/
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN CONTAINER*/
+.main-container h1 {
+    font-size: 2.2em;
+    font-family: "Times New Roman", Times, serif;
+	font-weight:bold; /*set the text content to be bold*/
+	color: #333; /*purple*/
+	text-align: center; /*center the text content within the element's container*/
+}
+
+#main{
+    display:flex;
+    max-width:1200px; /*NB: Screen will never get larger than 1200px*/
+ 	margin-left:auto; /*Equal margins on both sides*/
+ 	margin-right:auto; /*Equal margins on both sides*/
+}
+#article{
+    flex: 80%;
+}
+article {
+    padding:2%; /*set the amount of space on all four sides of the element's content box to be 2%*/
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #000000; /*black*/;
+    background-color: rgb(239, 245, 200); /*light green*/
+}
+.cafe img,
+.pastry img,
+.music img {
+    max-width: 100%; /* images don't exceed their container's width */
+    height: auto;
+}
+
+/*TABLES*/
+table td {
+	border: 1px solid; /*set the border around an element, 1px value represents the width of the border,
+	while solid set the style of the border to be a solid line.*/
+}
+table {
+	width: 100%; /*set the width of the table*/
+	border-collapse: collapse; /*the border-collapse property in CSS is used to control how adjacent 
+	table cells should be separated. The collapse value specifies that the borders of adjacent cells 
+	should be collapsed into a single border.*/
+}
+td {
+	padding: 5px; /*set the amount of space between the content of an element and its border.*/
+    text-align: left; /*center the text content within the element's container*/
+    padding-left: 4%;
+}
+td:nth-child(1) { /* Selects the first column */
+    width: 80%;
+}
+td:nth-child(2) { /* Selects the second column */
+    width: 20%;
+}
+tr:hover {
+	background-color: rgb(87, 110, 87); /*light green*/
+}
+.price {
+    float: right;
+    padding-right: 25%;
+    font-weight: bold;
+}
+
+/* SIDE BAR */
+#aside{
+    flex: 20%; /* Set the flex property to 20% for the sidebar */
+}
+aside {
+    color: white; /* text color*/
+    background-color: rgb(87, 110, 87);
+    font-size: 1em;
+    font-variant: small-caps; /*display text in small capitals*/
+    padding: 2%; /* Add padding of 2% to the content inside the aside element */
+}
+
+/* FOOTER */
+#footer{
+    display:flex;
+    flex-direction: column;
+    color: #000000;  /*black*/
+    background-color: rgb(205, 205, 205); /*white*/
+    padding: 2% 2%; /*T/B and L/R*/ /*set the amount of space between the content of an element and its border.*/ 
+}
+.fa {
+	padding: 0.5%; /*set the amount of space between the content of an element and its border.*/
+	font-size:30px !important; /*specify the size of the font used for text content*/
+}
+.fa:hover {background-color: #4e4e4e74;} /*white*/
+.fa-youtube {color:#FF0000;} /*red*/
+.fa-facebook-official {color:#4267B2;} /*blue*/
+.fa-instagram {color: #000000;} /*black*/
+
+/* SLIDESHOW */
+#slideshow-container {
+    max-width: 400px; /* Set maximum width of the slideshow container */
+    position: relative; /* Position relative to its containing element */
+    margin: auto; /* Center the slideshow horizontally */
+}
+.add-to-basket {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.add-to-basket:hover {
+    background-color: #333;
+}
+.image {
+    width: 400px;
+    height: auto;
+}
+.prev, .next {
+    position: absolute; /* Position absolutely within the slideshow container */
+    top: 40%; /* Align vertically at the center */
+    width: auto;
+    margin-top: -22px; /* Center vertically by adjusting margin */
+    padding: 16px; /* Padding around the buttons */
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none; /* Disable user selection */
+}
+.next {
+    right: 0; /* Position the 'next' button on the right side */
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+@media screen and (max-width: 600px) {
+    .nav, .main-container {   
+      flex-direction: column;
+    }
+    header {
+        padding-right: 1%;
+    }
+
+    /* NAVIGATION MENU */
+    nav li {
+        width: 100%;  /* Set width to 100% for full width on mobile */
+    }
+    .topnav li.hide {
+        display: none; /* makes list items invisible */
+    }
+    .topnav li.icon {
+        display: block;
+    }
+    .topnav li a {
+        text-align: left;
+        padding: 14px 16px;
+        text-decoration: none; /*remove decorations to text, such as underlines, overlines, and strikethroughs*/
+        font-size:1.2em; /*specify the size of the font used for text content*/
+    }
+    .topnav.responsive li {
+        float: none;
+        display: block;  
+    }
+    .signup-form {
+        max-width: 300px;
+    }
+    .signin-form {
+        max-width: 300px;
+    }
+    .logo img {
+        width: 100px;
+        height: auto;
+    } 
+  }
